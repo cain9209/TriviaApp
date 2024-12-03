@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import questions from "../assets/questions.json";
 
 const QuestionComponent = () => {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  const currentQuestion = questions[currentQuestionIndex]; // Get the current question
 
   const handleInputChange = (e) => {
     setAnswer(e.target.value);
@@ -16,11 +20,22 @@ const QuestionComponent = () => {
   const handleReset = () => {
     setAnswer("");
     setSubmitted(false);
+    setCurrentQuestionIndex(0); // Reset to the first question
+  };
+
+  const handleNextQuestion = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setAnswer("");
+      setSubmitted(false);
+      setCurrentQuestionIndex(currentQuestionIndex + 1); // Move to the next question
+    } else {
+      alert("You've completed all questions!");
+    }
   };
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>What is your favorite programming language?</h2>
+      <h2>{currentQuestion.question}</h2>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <input
@@ -42,12 +57,20 @@ const QuestionComponent = () => {
       ) : (
         <div>
           <p>
-            {answer.trim().toLowerCase() === "javascript" ? (
-              <span style={{ color: "green" }}>Correct! JavaScript is a great choice!</span>
+            {answer.trim().toLowerCase() === currentQuestion.answer.toLowerCase() ? (
+              <span style={{ color: "green" }}>Correct! {currentQuestion.answer} is the right answer!</span>
             ) : (
-              <span style={{ color: "red" }}>Incorrect! You answered: {answer}</span>
+              <span style={{ color: "red" }}>
+                Incorrect! You answered: {answer}. The correct answer is: {currentQuestion.answer}.
+              </span>
             )}
           </p>
+          <button
+            onClick={handleNextQuestion}
+            style={{ padding: "10px 20px", fontSize: "16px", marginRight: "10px" }}
+          >
+            Next Question
+          </button>
           <button onClick={handleReset} style={{ padding: "10px 20px", fontSize: "16px" }}>
             Reset
           </button>
@@ -56,5 +79,5 @@ const QuestionComponent = () => {
     </div>
   );
 };
-<></>
+
 export default QuestionComponent;

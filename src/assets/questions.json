@@ -1,0 +1,6 @@
+[
+    { "id": 1, "question": "What is your favorite programming language?", "answer": "javascript" },
+    { "id": 2, "question": "What does HTML stand for?", "answer": "hypertext markup language" },
+    { "id": 3, "question": "What is the capital of France?", "answer": "paris" }
+  ]
+  
