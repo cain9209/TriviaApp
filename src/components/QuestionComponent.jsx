@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import questions from "../assets/questions.json";
+import questions from "../assets/harryPotterQuestions.json";
 
 const QuestionComponent = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

@@ -1,0 +1,22 @@
+[
+  { "id": 1, "question": "What is the name of Harry Potter's owl?", "answer": "hedwig" },
+  { "id": 2, "question": "What is the name of the house Harry Potter is sorted into?", "answer": "gryffindor" },
+  { "id": 3, "question": "Who is the author of the book series Harry Potter?", "answer": "j.k. rowling" },
+  { "id": 4, "question": "What position does Harry play on the Quidditch team?", "answer": "seeker" },
+  { "id": 5, "question": "What spell is used to disarm an opponent?", "answer": "expelliarmus" },
+  { "id": 6, "question": "What is the name of Hermione Granger's pet cat?", "answer": "crookshanks" },
+  { "id": 7, "question": "What is the name of the potion that grants luck?", "answer": "felix felicis" },
+  { "id": 8, "question": "What is Voldemort's real name?", "answer": "tom marvolo riddle" },
+  { "id": 9, "question": "What is the name of the train that takes students to Hogwarts?", "answer": "hogwarts express" },
+  { "id": 10, "question": "What is the name of the Weasley's family home?", "answer": "the burrow" },
+  { "id": 11, "question": "What is the name of the room that appears when needed?", "answer": "room of requirement" },
+  { "id": 12, "question": "Who killed Sirius Black?", "answer": "bellatrix lestrange" },
+  { "id": 13, "question": "What is the name of the wizarding bank in Diagon Alley?", "answer": "gringotts" },
+  { "id": 14, "question": "What magical object shows the deepest desires of a person’s heart?", "answer": "mirror of erised" },
+  { "id": 15, "question": "Who is the Half-Blood Prince?", "answer": "severus snape" },
+  { "id": 16, "question": "What creature is Aragog?", "answer": "acromantula" },
+  { "id": 17, "question": "What is the name of Hagrid’s giant half-brother?", "answer": "Grawp" },
+  { "id": 18, "question": "What is the name of the werewolf who is a friend of Harry's parents?", "answer": "remus lupin" },
+  { "id": 19, "question": "What house did Cedric Diggory belong to?", "answer": "hufflepuff" },
+  { "id": 20, "question": "What are the names of Harry's parents?", "answer": "james and lily potter" }
+]
